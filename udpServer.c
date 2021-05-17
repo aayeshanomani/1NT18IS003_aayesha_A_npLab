@@ -39,7 +39,6 @@ int main()
  
  len = sizeof(cliaddr);
  
- 
  for(;;)
  {
  	n = recvfrom(sockfd, (char *) buffer, MAXLINE, MSG_WAITALL, (struct sockaddr*) &cliaddr, &len);

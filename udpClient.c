@@ -48,7 +48,6 @@ int main()
 	 n = recvfrom(sockfd, (char *) buffer, MAXLINE, MSG_WAITALL, (struct sockaddr *) &servaddr, &len);
 	 
 	 buffer[n] = '\0';
-	 
 	 printf("Server: %s\n", buffer);
 	 bzero(buffer, sizeof(buffer));
  }
